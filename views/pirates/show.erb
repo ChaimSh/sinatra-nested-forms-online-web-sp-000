@@ -12,7 +12,7 @@ Name:
 <%= @pirate[:height] %>
 
 <h2>Display your ships here</h2>
-<% @pirate[ships].each do |ship|%>
+<% @pirate[:ships].each do |ship|%>
 Name: <%=ship.name%>
 Type: <%=ship.type%>
 Booty: <%=ship.booty%>
