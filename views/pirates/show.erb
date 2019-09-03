@@ -11,29 +11,9 @@ Name:
  Height:
 <%= @pirate[:height] %>
 
-<h2>Display your first ship here</h2>
-
-Name:
-<%= @pirate[:ships][][:name] %>
-
-
- Type:
-<%= @pirate[:ships][][:type] %>
-
-
- Booty:
-<%= @pirate[:ships][][:weight] %>
-
-
-<h2>Display your second ship here</h2>
-
-Name:
-<%= @pirate[:ships][][:name] %>
-
-
- Type:
-<%= @pirate[:ships][][:type] %>
-
-
- Booty:
-<%= @pirate[:ships][][:weight] %>
+<h2>Display your ships here</h2>
+<% @pirate.ships.each do |ship|%>
+Name: <%=ship.name%>
+Type: <%=ship.type%>
+Booty: <%=ship.booty%>
+<%end%>
