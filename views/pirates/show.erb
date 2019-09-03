@@ -14,6 +14,6 @@ Name:
 <h2>Display your ships here</h2>
 <% @pirate[:ships].each do |ship|%>
 Name: <%=ship[:name]%>
-Type: <%=ship.type%>
-Booty: <%=ship.booty%>
+Type: <%=ship[:type]%>
+Booty: <%=ship[:booty]%>
 <%end%>
